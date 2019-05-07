@@ -1,0 +1,227 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2019, 5:20:23 PM
+    Author     : Mason
+*/
+
+@font-face {
+    font-family: "SMTFont";
+    src: url("fonts/Futura Std Medium.woff") format('woff');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    min-width: 1300px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: white;  
+    background: url(images/rockies.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#title{
+    margin: 0;
+    width: 100%;
+    position: relative; 
+    text-align: center;
+}
+
+#title h1 {
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #A0B28F;
+    font-family: 'Futura Std Medium';
+}
+
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+
+#contentcolumn{
+    margin-left: 80%; /*Set left margin to LeftColumnWidth*/
+}
+
+#leftcolumn{
+    float: left;
+    width: 80%; /*Width of left column*/
+    margin-left: -100%;
+    height: 100%;
+}
+
+/*Player Selector CSS Start*/
+#playerSelector{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    /*float: left;*/
+    background-color: #2d2d2d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.posButton{
+    height: 50px;
+    width: 60px;
+    float: left;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-image: linear-gradient(lightgrey, grey);
+}
+
+.posButton h2{  
+    font-size: 20px;
+    margin:0;
+    padding: 0;
+    /*margin: 25%;*/
+    text-align: center;
+}
+
+/*Player Selector CSS End*/
+/*Side Nav CSS Start*/
+#sidenav{
+    height: 100%;
+    width: 400px;
+    position: relative;
+    float: right;
+    background-color: #333;
+    border-left: black;
+    border-left-style: solid;
+    border-left-width: 2px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#playBanner {
+    width: 100%;
+    height: 50px;
+    background-color: #686868;
+}
+
+#playBanner h1{
+    /*    border-top: black;
+        border-top-style: solid;
+        border-top-width: 5px;
+        color: black;*/
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    /*background-color: #A0B28F*/
+}
+
+#playHeader{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+#playHeader ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #686868;
+
+}
+
+.playHeader{
+    position: relative; 
+    width: 50%; 
+    height: 50px; 
+    float:left
+}
+
+.timeHeader{
+    position: relative; 
+    width: 50%; 
+    height: 50px; 
+    float:left
+}
+
+#playContainer {
+    width: 100%;
+    height: 300px;
+}
+
+#playContainer ul{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#playContainer li {
+    width: 100%;
+    height: 50px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgray;
+}
+
+.play{
+    font-size: 20px;
+    position: relative; 
+    width: 50%; 
+    height: 50px; 
+    float:left
+}
+
+.time{
+    font-size: 20px;
+    position: relative; 
+    width: 50%; 
+    height: 50px; 
+    float:left
+}
+
+/*Side Nav CSS END*/
+
+#canvasWrapper{
+    position:relative;
+    float:left;
+    width:100%;
+    height:100%;
+}
+#canvasHome{
+    visibility: visible;
+    position:absolute; top:0px; left:0px;
+/*    width:90%;
+    height:60%;*/
+    margin: 2%;
+    background-color: black;
+}
+#canvasEnd{
+    visibility: hidden;
+    position:absolute; top:0px; left:0px;
+/*    width:90%;
+    height:60%;*/
+    margin: 2%;
+    background-color: red;
+}

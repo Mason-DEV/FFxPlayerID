@@ -1,10 +1,16 @@
 <html>
     <head>
         <link href="/style.css" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/playChanger.js"></script>
+        <script type="text/javascript" src="js/playerSelector.js"></script>
+        <script type="text/javascript" src="js/squares.js"></script>
+        <script type="text/javascript" src="js/verify.js"></script>
+        <script type="text/javascript" src="js/timer.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     </head>
     <body>
-        <div id="banner"></div>
+        <!--<div id="banner"></div>-->
         <div id="title">
             <h1>Field F/x - Player ID Training</h1>
 

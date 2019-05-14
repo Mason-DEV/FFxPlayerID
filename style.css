@@ -53,14 +53,82 @@ html, body {
 }
 
 #contentcolumn{
-    margin-left: 80%; /*Set left margin to LeftColumnWidth*/
+    margin-left:  calc(100% - 400px); /*Set left margin to LeftColumnWidth*/
+    height: 100%;
 }
-
 #leftcolumn{
     float: left;
-    width: 80%; /*Width of left column*/
+    width: calc(100% - 400px); /*Width of left column*/
     margin-left: -100%;
     height: 100%;
+    /*    background-image: url(images/field.jpg);
+        background-position: initial;
+        background-size: 100% 750px;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+        background-color: #686868;*/
+
+}
+#intro{
+    height: 100%;
+    width: 100%;
+    /*background-color: #fffcfc;*/
+}
+.course_title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 2.0em;
+    text-indent: 10px;
+    color: #545454;
+    font-weight: bold;
+}
+#intro .titleTab{
+    background-color: #F7F7F7;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.7em;
+    box-shadow: -2px 2px 5px #CCCCB8;
+    text-indent: 10px;
+    color: #A0B28F;
+}
+#intro .descTab{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 62px;
+    width: 90%;
+    font-family: Gill Sans / Gill Sans MT,sans-serif;
+        /*color: #757575;*/
+}
+
+#intro .title2tab{
+    background-color: #A0B28F;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 98%;
+    padding: 2px;
+    border-radius: 7px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.7em;
+    box-shadow: -2px 2px 5px #CCCCB8;
+    text-indent: 10px;
+    color: #FFF;
+}
+
+#playPosition{
+    height: 5%; 
+    width: 100%; 
+    /*background: red;*/
+}
+
+#playPosition h1{
+    margin: 0;
+    text-align: center;
 }
 
 /*Player Selector CSS Start*/
@@ -108,7 +176,6 @@ html, body {
     border-left-style: solid;
     border-left-width: 2px;
     overflow: hidden;
-    overflow-x: hidden;
 }
 
 #playBanner {
@@ -212,16 +279,16 @@ html, body {
 #canvasHome{
     visibility: visible;
     position:absolute; top:0px; left:0px;
-/*    width:90%;
-    height:60%;*/
+    /*    width:90%;
+        height:60%;*/
     margin: 2%;
     background-color: black;
 }
 #canvasEnd{
     visibility: hidden;
     position:absolute; top:0px; left:0px;
-/*    width:90%;
-    height:60%;*/
+    /*    width:90%;
+        height:60%;*/
     margin: 2%;
     background-color: red;
 }

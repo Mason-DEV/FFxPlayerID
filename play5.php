@@ -3,7 +3,7 @@
     <head>
         <?php include 'header.php'; ?>
         
-        <script type="text/javascript" src="js/play1.js"></script>
+        <script type="text/javascript" src="js/play5.js"></script>
         
     </head>
     <body>

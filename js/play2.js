@@ -4,42 +4,39 @@
  * and open the template in the editor.
  */
 window.addEventListener('load', function () {
-    play1();
+    play2();
 });
 
 
-function play1() {
-    console.info("play1.js");
+function play2() {
+    console.info("play2.js");
     //Sets current play to highlighted blue
-    highlight(1);
-    buildPlay1();
+    loadPrevTimes(2);
+    highlight(2);
+    buildPlay2();
     addListeners();
     timerStart();
-
 }
 
-
-function buildPlay1() {
+function buildPlay2() {
     //cyan - left click
     //red - right click
     //green - good
-    spot1("svgHome", "red");
-    spot1("svgEnd", "red");
-    spot2("svgHome", "green");
-    spot2("svgEnd", "red");
-    spot3("svgHome", "green");
+    spot1("svgHome", "green");
+    spot1("svgEnd", "green");
+    spot2("svgHome", "cyan");
+    spot2("svgEnd", "green");
+    spot3("svgHome", "cyan");
     spot3("svgEnd", "green");
     spot4("svgHome", "green");
-    spot4("svgEnd", "green");
+    spot4("svgEnd", "cyan");
+
 }
 
 
-
-function play1advance(){
+function play2advance() {
     timerEnd();
     var time = calcTime();
-    console.info(time);
-    setTime(time, 1);
-    goToNext(2);
+    setTime(time, 2);
+    goToNext(3);
 }
-

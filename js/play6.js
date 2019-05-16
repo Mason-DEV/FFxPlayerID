@@ -15,6 +15,7 @@ function play6() {
     highlight(6);
     buildPlay6();
     addListeners();
+    resestClicks();
     timerStart();
 
 }
@@ -61,4 +62,6 @@ function play6advance() {
     var time = calcTime();
     setTime(time, 6);
     goToNext(7);
+    var clicks = getNumClicks();
+    setClicks(clicks, 6);
 }

@@ -15,6 +15,7 @@ function play4() {
     highlight(4);
     buildPlay4();
     addListeners();
+    resestClicks();
     timerStart();
 
 
@@ -47,4 +48,6 @@ function play4advance() {
     var time = calcTime();
     setTime(time, 4);
     goToNext(5);
+    var clicks = getNumClicks();
+    setClicks(clicks, 4);
 }

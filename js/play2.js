@@ -15,6 +15,7 @@ function play2() {
     highlight(2);
     buildPlay2();
     addListeners();
+    resestClicks();
     timerStart();
 }
 
@@ -38,5 +39,7 @@ function play2advance() {
     timerEnd();
     var time = calcTime();
     setTime(time, 2);
+    var clicks = getNumClicks();
+    setClicks(clicks, 2);
     goToNext(3);
 }

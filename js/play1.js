@@ -14,8 +14,9 @@ function play1() {
     highlight(1);
     buildPlay1();
     addListeners();
+    resestClicks();
     timerStart();
-
+    
 }
 
 
@@ -38,8 +39,9 @@ function buildPlay1() {
 function play1advance(){
     timerEnd();
     var time = calcTime();
-    console.info(time);
     setTime(time, 1);
+    var clicks = getNumClicks();
+    setClicks(clicks, 1);
     goToNext(2);
 }
 

@@ -15,6 +15,7 @@ function play5() {
     highlight(5);
     buildPlay5();
     addListeners();
+    resestClicks();
     timerStart();
 
 }
@@ -40,25 +41,27 @@ function buildPlay5() {
     spot7("svgEnd", "green");
     spot8("svgHome", "red");
     spot8("svgEnd", "red");
-    
-    spot9("svgHome","red");
-    spot9("svgEnd","green");
-    spot10("svgHome","green");
-    spot10("svgEnd","red");
-    spot11("svgHome","green");
-    spot11("svgEnd","green");
-    spot12("svgHome","red");
-    spot12("svgEnd","red");
-    
-    spot13("svgHome","green");
-    spot13("svgEnd","red");
+
+    spot9("svgHome", "red");
+    spot9("svgEnd", "green");
+    spot10("svgHome", "green");
+    spot10("svgEnd", "red");
+    spot11("svgHome", "green");
+    spot11("svgEnd", "green");
+    spot12("svgHome", "red");
+    spot12("svgEnd", "red");
+
+    spot13("svgHome", "green");
+    spot13("svgEnd", "red");
 
 }
 
 
-function play5advance(){
-   timerEnd();
+function play5advance() {
+    timerEnd();
     var time = calcTime();
     setTime(time, 5);
     goToNext(6);
+    var clicks = getNumClicks();
+    setClicks(clicks, 5);
 }

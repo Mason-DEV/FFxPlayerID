@@ -15,6 +15,7 @@ function play10() {
     highlight(10);
     buildPlay10();
     addListeners();
+    resestClicks();
     timerStart();
 }
 
@@ -60,4 +61,6 @@ function play10advance() {
     var time = calcTime();
     setTime(time, 10);
 //    goToNext(10);
+    var clicks = getNumClicks();
+    setClicks(clicks, 10);
 }

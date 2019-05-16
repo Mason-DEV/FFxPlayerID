@@ -219,14 +219,28 @@ html, body {
 
 .playHeader{
     position: relative; 
-    width: 50%; 
+    width: 25%; 
+    height: 50px; 
+    float:left
+}
+
+.clickHeader{
+    position: relative; 
+    width: 25%; 
+    height: 50px; 
+    float:left
+}
+
+.accHeader{
+    position: relative; 
+    width: 25%; 
     height: 50px; 
     float:left
 }
 
 .timeHeader{
     position: relative; 
-    width: 50%; 
+    width: 25%; 
     height: 50px; 
     float:left
 }
@@ -255,7 +269,22 @@ html, body {
 .play{
     font-size: 20px;
     position: relative; 
-    width: 50%; 
+    width: 25%; 
+    height: 50px; 
+    float:left
+}
+
+.click{
+    font-size: 20px;
+    position: relative; 
+    width: 25%; 
+    height: 50px; 
+    float:left
+}
+.acc{
+    font-size: 20px;
+    position: relative; 
+    width: 25%; 
     height: 50px; 
     float:left
 }
@@ -263,7 +292,7 @@ html, body {
 .time{
     font-size: 20px;
     position: relative; 
-    width: 50%; 
+    width: 25%; 
     height: 50px; 
     float:left
 }

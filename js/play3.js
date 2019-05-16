@@ -9,12 +9,13 @@ window.addEventListener('load', function () {
 
 
 function play3() {
-     console.info("play3.js");
+    console.info("play3.js");
     //Sets current play to highlighted blue
     loadPrevTimes(3);
     highlight(3);
     buildPlay3();
     addListeners();
+    resestClicks();
     timerStart();
 
 }
@@ -48,4 +49,6 @@ function play3advance() {
     var time = calcTime();
     setTime(time, 3);
     goToNext(4);
+    var clicks = getNumClicks();
+    setClicks(clicks, 3);
 }

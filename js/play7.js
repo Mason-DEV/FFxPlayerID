@@ -15,6 +15,7 @@ function play7() {
     highlight(7);
     buildPlay7();
     addListeners();
+    resestClicks();
     timerStart();
 }
 
@@ -57,7 +58,9 @@ function buildPlay7() {
 
 function play7advance() {
     timerEnd();
-    var time = calcTime();1
+    var time = calcTime();
     setTime(time, 7);
     goToNext(8);
+    var clicks = getNumClicks();
+    setClicks(clicks, 7);
 }

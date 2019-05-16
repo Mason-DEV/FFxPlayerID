@@ -3,6 +3,7 @@ window.addEventListener('load', function () {
 });
 
 var currID = null;
+var numClicks = 0;
 
 function playerSelector() {
 //Add listener for what player we have selected
@@ -12,6 +13,14 @@ function playerSelector() {
 
 function getCurrID() {
     return currID;
+}
+
+function getNumClicks(){
+    return numClicks;
+}
+
+function resestClicks(){
+    numClicks = 0;
 }
 
 function numPress(e) {
@@ -162,6 +171,7 @@ function swapHomeEnd(key) {
 
 
 function leftClickChange(element) {
+    numClicks++;
     var type = element[0].nodeName;
     var color;
     var typeChange;
@@ -191,6 +201,7 @@ function leftClickChange(element) {
 }
 
 function rightClickChange(element) {
+    numClicks++;
     var type = element[0].nodeName;
     var color;
     var typeChange;

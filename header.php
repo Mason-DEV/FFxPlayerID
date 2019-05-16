@@ -1,12 +1,12 @@
 <html>
     <head>
-        <link href="/style.css" rel="stylesheet">
+        <link href="/style3.css" rel="stylesheet">
         <script type="text/javascript" src="js/playChanger.js"></script>
         <script type="text/javascript" src="js/playerSelector.js"></script>
         <script type="text/javascript" src="js/squares.js"></script>
         <script type="text/javascript" src="js/verify.js"></script>
         <script type="text/javascript" src="js/timer.js"></script>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     </head>
     <body>

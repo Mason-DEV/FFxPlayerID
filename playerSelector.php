@@ -14,7 +14,7 @@
         <h2>4<br>2B</h2>
     </div>
     <div id="pos5"class="posButton" title="Press 5">
-        <h2>5<br>2B</h2>
+        <h2>5<br>3B</h2>
     </div>
     <div id="pos6"class="posButton" title="Press 6">
         <h2>6<br>SS</h2>

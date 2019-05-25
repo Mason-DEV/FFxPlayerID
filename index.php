@@ -36,12 +36,12 @@
                 <div class="descTab">Once a play is completed, it needs to marked "Verified". <br> This is done with the F12 key on your keyboard. <br> In the game, when you have changed all the player ID squares to green. You will hit F12 to log your time, and move on to the next level.</div>
                 <div class="title2Tab">Lets Play!</div>
                 <div class="descTab">Hit the button below to get started.</div>
-                <input id="btntest" type="button" value="Start" style="background-color: #4CAF50; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block; margin-left: 30; margin-bottom: 60; font-size: 16px;"  onclick="window.location.href = 'play1.php'" />
+                <input id="btntest" type="button" value="Start" style="background-color: #A0B28F; /* Green */  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block; margin-left: 30; margin-bottom: 60; font-size: 16px;"  onclick="window.location.href = 'play1.php'" />
             </div>
         </div>
 
-            <!--
-            
-                    </div>
-                </body>
-            </html>
+        <!--
+        
+                </div>
+            </body>
+        </html>

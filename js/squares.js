@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 function spot1(svgID, color) {
     var svgns = "http://www.w3.org/2000/svg";
     var group = document.createElementNS("http://www.w3.org/2000/svg", "g");

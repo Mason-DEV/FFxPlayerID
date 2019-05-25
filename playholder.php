@@ -1,6 +1,3 @@
-
-
-
 <div id="sidenav">
     <div id="playBanner">
         <h1>Plays To Resolve</h1>

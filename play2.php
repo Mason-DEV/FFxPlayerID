@@ -2,7 +2,7 @@
 <html>
     <head>
         <?php include 'header.php'; ?>
-        
+
         <script type="text/javascript" src="js/play2.js"></script>
         
     </head>
@@ -19,7 +19,7 @@
                 <svg id="svgHome" x="20" y="20"width="82%" height="60%"></svg>
                 <svg id="svgEnd" x="20" y="20" width="82%" height="60%" style="visibility: hidden;"></svg>
             </svg>
-    
+
         </div>
     </body>
 </html>

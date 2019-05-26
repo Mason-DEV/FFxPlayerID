@@ -40,4 +40,7 @@
     <div id="pos13"class="posButton" title="Press -">
         <h2>13<br>3B rnr</h2>
     </div>
+    <div id="verify"class="verifyButton" title="Press F12">
+        <h2>F12<br>Verify Play</h2>
+    </div>
 </div>

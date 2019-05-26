@@ -150,7 +150,26 @@ html, body {
     margin-top: 5px;
     background-image: linear-gradient(lightgrey, grey);
 }
+.verifyButton{
+    height: 50px;
+    width: 120px;
+    float: left;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-image: linear-gradient(lightgrey, grey);
+}
 
+.verifyButton h2{  
+    font-size: 20px;
+    margin:0;
+    padding: 0;
+    /*margin: 25%;*/
+    text-align: center;
+}
 .posButton h2{  
     font-size: 20px;
     margin:0;

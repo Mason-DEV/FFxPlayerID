@@ -228,7 +228,7 @@
             <?php
             if (isset($_POST['button_pressed'])) {
 
-                $to = 'm.guy@smt.com';
+                $to = 'm.guy@smt.com, s.king@smt.com, p.mclaughlin@smt.com, c.santin@smt.com, s.reyes@smt.com';
 
                 $name = $_POST['name'];
                 $email = $_POST['email'];

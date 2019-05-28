@@ -44,7 +44,8 @@ function play3advance() {
     timerEnd();
     var time = calcTime();
     setTime(time, 3);
-    goToNext(4);
     var clicks = getNumClicks();
     setClicks(clicks, 3);
+    scores();
+    goToNext(4);
 }

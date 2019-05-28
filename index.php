@@ -1,4 +1,14 @@
+<?php  
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
+
+if (isset($_SESSION['CLICKS_1']) && !empty($_SESSION['CLICKS_1'])) {
+   header("Location: play2php");
+} 
+?>
+?>
 <html>
     <head>
         <?php include 'header.php'; ?>

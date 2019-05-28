@@ -1,8 +1,19 @@
-<?php ?>
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+if (isset($_SESSION['CLICKS_1']) && !empty($_SESSION['CLICKS_1'])) {
+   header("Location: play2.php");
+} 
+?>
+
+
 <html>
     <head>
         <?php include 'header.php'; ?>
-        
+
         <script type="text/javascript" src="js/play1.js"></script>
 
     </head>

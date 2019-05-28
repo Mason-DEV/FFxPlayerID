@@ -37,5 +37,6 @@ function play2advance() {
     setTime(time, 2);
     var clicks = getNumClicks();
     setClicks(clicks, 2);
+    scores();
     goToNext(3);
 }

@@ -56,7 +56,8 @@ function play9advance() {
     timerEnd();
     var time = calcTime();
     setTime(time, 9);
-    goToNext(10);
     var clicks = getNumClicks();
     setClicks(clicks, 9);
+    scores();
+    goToNext(10);
 }

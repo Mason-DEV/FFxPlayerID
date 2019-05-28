@@ -1,3 +1,13 @@
+<?php  
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+    
+    
+$_SESSION["CLICKS_10"] = isset($_COOKIE["CLICKS_10"]) ? $_COOKIE["CLICKS_10"] : '';
+$_SESSION["TIME_10"] = isset($_COOKIE["TIME_10"]) ? $_COOKIE["TIME_10"] : '';
+$_SESSION["ACC_10"] = isset($_COOKIE["ACC_10"]) ? $_COOKIE["ACC_10"] : '';
+}
+?>
 <html>
     <head>
         <?php include 'header.php'; ?>
@@ -228,7 +238,6 @@
             <?php
             if (isset($_POST['button_pressed'])) {
 
-                $to = 'm.guy@smt.com, s.king@smt.com, p.mclaughlin@smt.com, c.santin@smt.com, s.reyes@smt.com';
 
                 $name = $_POST['name'];
                 $email = $_POST['email'];
@@ -328,12 +337,9 @@
                 } else {
                     echo "<script>alert('There was an error submitting your score, please try again.');</script>";
                 }
-
-
-
-
-
+                
                 echo 'Email Sent.';
+                session_destroy();
             }
             ?>
 

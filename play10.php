@@ -1,4 +1,19 @@
-<?php ?>
+<?php  
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+
+$_SESSION["CLICKS_9"] = isset($_COOKIE["CLICKS_9"]) ? $_COOKIE["CLICKS_9"] : '';
+$_SESSION["TIME_9"] = isset($_COOKIE["TIME_9"]) ? $_COOKIE["TIME_9"] : '';
+$_SESSION["ACC_9"] = isset($_COOKIE["ACC_9"]) ? $_COOKIE["ACC_9"] : '';
+
+if (isset($_SESSION['CLICKS_10']) && !empty($_SESSION['CLICKS_10'])) {
+   header("Location: submit.php");
+} 
+
+?>
 <html>
     <head>
         <?php include 'header.php'; ?>

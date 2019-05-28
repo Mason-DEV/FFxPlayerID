@@ -1,8 +1,22 @@
-<?php ?>
+<?php  
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+
+$_SESSION["CLICKS_1"] = isset($_COOKIE["CLICKS_1"]) ? $_COOKIE["CLICKS_1"] : '';
+$_SESSION["TIME_1"] = isset($_COOKIE["TIME_1"]) ? $_COOKIE["TIME_1"] : '';
+$_SESSION["ACC_1"] = isset($_COOKIE["ACC_1"]) ? $_COOKIE["ACC_1"] : '';
+
+if (isset($_SESSION['CLICKS_2']) && !empty($_SESSION['CLICKS_2'])) {
+   header("Location: play3.php");
+} 
+
+?>
 <html>
     <head>
         <?php include 'header.php'; ?>
-
         <script type="text/javascript" src="js/play2.js"></script>
         
     </head>

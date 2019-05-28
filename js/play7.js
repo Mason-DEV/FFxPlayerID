@@ -56,7 +56,8 @@ function play7advance() {
     timerEnd();
     var time = calcTime();
     setTime(time, 7);
-    goToNext(8);
     var clicks = getNumClicks();
     setClicks(clicks, 7);
+    scores();
+    goToNext(8);
 }

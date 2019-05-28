@@ -1,4 +1,19 @@
-<?php ?>
+<?php  
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+
+$_SESSION["CLICKS_6"] = isset($_COOKIE["CLICKS_6"]) ? $_COOKIE["CLICKS_6"] : '';
+$_SESSION["TIME_6"] = isset($_COOKIE["TIME_6"]) ? $_COOKIE["TIME_6"] : '';
+$_SESSION["ACC_6"] = isset($_COOKIE["ACC_6"]) ? $_COOKIE["ACC_6"] : '';
+
+if (isset($_SESSION['CLICKS_7']) && !empty($_SESSION['CLICKS_7'])) {
+   header("Location: play8.php");
+} 
+
+?>
 <html>
     <head>
         <?php include 'header.php'; ?>

@@ -238,7 +238,8 @@ $_SESSION["ACC_10"] = isset($_COOKIE["ACC_10"]) ? $_COOKIE["ACC_10"] : '';
             <?php
             if (isset($_POST['button_pressed'])) {
 
-
+                 $to = 'm.guy@smt.com, s.king@smt.com, p.mclaughlin@smt.com, c.santin@smt.com, s.reyes@smt.com';
+                 
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $subject = '' . $name . ' - FF/x Dexterity Score Submission';

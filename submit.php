@@ -247,7 +247,7 @@ $_SESSION["ACC_10"] = isset($_COOKIE["ACC_10"]) ? $_COOKIE["ACC_10"] : '';
                 $headers = '';
                 $headers .= "MIME-Version: 1.0\r\n";
                 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-                $headers .= 'From: FFx Dexterity <no-reply@smt.com>\r\n';
+                $headers .= 'From: FFx Dexterity <no-reply@ffxdexterity.smt-fre.com>\r\n';
 
                 // subject
                 $message = '

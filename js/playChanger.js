@@ -1,5 +1,3 @@
-
-
 function highlight(playNum) {
     for (var p = 1; p < playNum; p++) {
         document.querySelector('#play' + p).style.backgroundColor = "lightgreen";

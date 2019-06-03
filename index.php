@@ -5,9 +5,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
 if (isset($_SESSION['CLICKS_1']) && !empty($_SESSION['CLICKS_1'])) {
-   header("Location: play2php");
+   header("Location: play2.php");
 } 
-?>
 ?>
 <html>
     <head>
